@@ -1,12 +1,14 @@
 <template>
   <v-row class="d-flex align-content-start">
     <v-col cols="4">
-      <v-img
-        class="rounded-circle"
-        width="200"
-        height="200"
-        src="https://preview.colorlib.com/theme/andrea/images/image_1.jpg"
-      />
+      <nuxt-link to="/post/asd">
+        <v-img
+          class="rounded-circle"
+          width="200"
+          height="200"
+          src="https://preview.colorlib.com/theme/andrea/images/image_1.jpg"
+        />
+      </nuxt-link>
     </v-col>
 
     <v-col cols="8">
@@ -41,7 +43,7 @@
         </div>
 
         <div>
-          <nuxt-link class="float-right" to="/posts/id">
+          <nuxt-link class="float-right" to="/post/id">
             Czytaj Więcej
           </nuxt-link>
         </div>
