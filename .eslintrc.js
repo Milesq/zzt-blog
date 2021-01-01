@@ -5,7 +5,6 @@ module.exports = {
     node: true,
   },
   extends: [
-    '@nuxtjs/eslint-config-typescript',
     'prettier',
     'prettier/vue',
     'plugin:prettier/recommended',
@@ -22,7 +21,6 @@ module.exports = {
   plugins: ['prettier', 'jest'],
   rules: {
     'prefer-const': 'warn',
-    '@typescript-eslint/no-unused-vars': 'off',
     'no-unused-vars': 'warn',
     'no-console': 'off',
   },
