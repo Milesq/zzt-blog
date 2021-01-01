@@ -1,17 +1,17 @@
 <template>
-  <div>
-    <h1>Welcome to Your Vue.js App</h1>
-    <span>{{ i }}</span>
-    <button @click="i++">Add 1</button>
-  </div>
+  <v-container>
+    <v-row justify="center" align="center">
+      <v-col cols="12" sm="8">
+        <v-container>
+          <BlogPost />
+        </v-container>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-
-export default Vue.extend({
-  data: () => ({
-    i: 0,
-  }),
-});
+<script>
+export default {
+  name: 'Post',
+};
 </script>

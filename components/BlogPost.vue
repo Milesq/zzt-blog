@@ -1,42 +1,51 @@
 <template>
-  <div>
-    <h1 class="h1 mb-5">Lorem ipsum dolor sit amet, consectetur.</h1>
-
-    <div class="grey--text text-justify">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, animi
-        consequatur dolor ex nam nemo placeat rem. Aliquam atque commodi eos est
-        exercitationem fuga magnam maxime, minima necessitatibus nostrum
-        perspiciatis quibusdam sint vitae voluptas voluptatibus. Accusamus
-        aliquid, debitis eos facilis impedit in ipsam iusto maiores provident
-        quas, qui rem sunt.
-      </p>
-
+  <v-row class="d-flex align-content-start">
+    <v-col cols="4">
       <v-img
-        lazy-src="https://picsum.photos/id/11/10/6"
-        max-height="450"
-        max-width="750"
+        class="rounded-circle"
+        width="200"
+        height="200"
         src="https://preview.colorlib.com/theme/andrea/images/image_1.jpg"
-      ></v-img>
+      />
+    </v-col>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque
-        commodi consectetur corporis culpa, dolorem ea eveniet, explicabo facere
-        fugit illo ipsa labore laudantium molestiae nihil non, optio
-        perspiciatis quas quo rerum similique suscipit tempore temporibus? Ad,
-        corporis dolore dolorem enim eos ex excepturi exercitationem facilis
-        ipsam iste nisi obcaecati perferendis placeat, provident quam quisquam
-        quo quod ratione temporibus unde vel veniam voluptatem? Cum quis, sunt.
-        Amet eius ex inventore magnam magni nam nesciunt provident sit vero
-        voluptate? Accusantium atque aut culpa cum dolorum enim ex excepturi
-        fugit, hic illo in, itaque laborum magni minus necessitatibus nemo neque
-        nobis nulla numquam omnis quaerat quidem ratione repellat reprehenderit
-        repudiandae rerum sequi sint suscipit tempora unde vel vero vitae
-        voluptatem. Ad, aliquam amet, architecto aut commodi consectetur culpa
-        delectus dolorem, earum ex explicabo harum inventore ipsa iste maxime
-        molestias nemo nisi nostrum placeat porro quaerat quasi ratione
-        voluptate! A atque esse magnam!
-      </p>
-    </div>
-  </div>
+    <v-col cols="8">
+      <div>
+        <div class="display-1 font-weight-medium justify-left">
+          <p>Droga Życia i nie życia</p>
+        </div>
+
+        <div>
+          <span class="d-flex justify-space-around">
+            <p class="grey--text">
+              <v-icon right> mdi-av-timer </v-icon>
+              June 28, 2020
+            </p>
+            <p class="font-weight-bold">
+              <v-icon left> mdi-folder </v-icon>
+              Sience
+            </p>
+            <p class="views">
+              <v-icon left> mdi-human-greeting </v-icon>
+              10
+            </p>
+          </span>
+        </div>
+
+        <div class="grey--text text--darken-2 text-justify">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est veniam
+            laudantium eligendi, assumenda eveniet expedita nobis dolorem,
+            tempora
+          </p>
+        </div>
+
+        <div>
+          <nuxt-link class="float-right" to="/posts/id">
+            Czytaj Więcej
+          </nuxt-link>
+        </div>
+      </div>
+    </v-col>
+  </v-row>
 </template>
