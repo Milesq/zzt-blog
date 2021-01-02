@@ -51,3 +51,38 @@
     </v-col>
   </v-row>
 </template>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    createdAt: {
+      type: Date,
+      required: true,
+    },
+    category: {
+      type: String,
+      required: true,
+    },
+    src: {
+      type: String,
+      required: true,
+      validator(url) {
+        try {
+          new URL(url);
+          return true;
+        } catch (_) { // eslint doesnt recognize catch {}
+          return false;
+        }
+      },
+    },
+  },
+};
+</script>
