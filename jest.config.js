@@ -5,9 +5,8 @@ module.exports = {
     '^vue$': 'vue/dist/vue.common.js',
   },
   setupFiles: ['<rootDir>/tests/utils/setup-jest.js'],
-  moduleFileExtensions: ['ts', 'js', 'vue', 'json'],
+  moduleFileExtensions: ['js', 'vue', 'json'],
   transform: {
-    '^.+\\.ts$': 'ts-jest',
     '^.+\\.js$': 'babel-jest',
     '.*\\.(vue)$': 'vue-jest',
   },
