@@ -78,7 +78,8 @@ export default {
         try {
           new URL(url);
           return true;
-        } catch (_) { // eslint doesnt recognize catch {}
+        } catch (_) {
+          // eslint doesnt recognize catch {}
           return false;
         }
       },

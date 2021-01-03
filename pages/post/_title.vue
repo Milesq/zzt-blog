@@ -2,18 +2,9 @@
   <v-container fluid>
     <v-row class="d-flex justify-center mt-10">
       <v-col cols="8">
-         <v-parallax
-          dark
-          :src="post.image"
-        >
-          <v-row
-            align="center"
-            justify="center"
-          >
-            <v-col
-              class="text-center"
-              cols="12"
-            >
+        <v-parallax dark :src="post.image">
+          <v-row align="center" justify="center">
+            <v-col class="text-center" cols="12">
               <h1 class="display-1 mb-4">
                 {{ post.title }}
               </h1>
@@ -46,11 +37,11 @@ import df from 'dateformat';
 export default {
   async asyncData({ params: { title: slug }, $content }) {
     const [post] = await $content('posts').where({ slug }).fetch();
-    console.log(post.image)
+    console.log(post.image);
     return { post };
   },
   methods: {
     formatDate: date => df(new Date(date), 'dd.mm.yyyy - HH:MM'),
-  }
+  },
 };
 </script>

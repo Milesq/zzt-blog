@@ -6,7 +6,6 @@
           <BlogPost
             v-for="(post, i) in posts"
             :key="i"
-
             :title="post.title"
             :description="post.description"
             :createdAt="new Date(post.createdAt)"
