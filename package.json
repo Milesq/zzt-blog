@@ -41,7 +41,7 @@
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/vuetify": "^1.11.2",
     "@types/dateformat": "^3.0.1",
-    "@types/jest": "^26.0.19",
+    "@types/jest": "^26.0.20",
     "@vue/test-utils": "^1.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
