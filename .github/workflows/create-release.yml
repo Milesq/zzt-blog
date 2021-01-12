@@ -42,7 +42,7 @@ jobs:
       - name: Generate page
         run: |
           yarn generate --target static
-          zip --junk-paths my-artifact dist/
+          zip -r my-artifact dist/
 
       - name: Create Release
         id: create_release
