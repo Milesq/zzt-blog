@@ -76,9 +76,11 @@ export default {
     ],
   }),
   watch: {
-    group() {
+    group(group) {
+      if (group === undefined) return;
+
       this.drawer = false;
-      const choosenLinkIDX = this.group || 0;
+      const choosenLinkIDX = group;
       const link = this.links[choosenLinkIDX].link;
 
       this.$router.push(link);
