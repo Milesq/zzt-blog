@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-top: 10vmin">
+  <div class="mb-16">
     <nuxt-content :document="mainContent" />
   </div>
 </template>

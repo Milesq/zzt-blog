@@ -13,6 +13,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
+      ref="appBar"
       app
       :color="$vuetify.theme.dark ? null : 'white'"
       elevate-on-scroll
