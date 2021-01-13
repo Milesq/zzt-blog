@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="drawer" absolute bottom temporary>
+    <v-navigation-drawer app v-model="drawer" absolute bottom temporary>
       <v-list nav dense>
         <v-list-item-group
           v-model="group"
@@ -13,6 +13,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
+      app
       fixed
       :color="$vuetify.theme.dark ? null : 'white'"
       elevate-on-scroll

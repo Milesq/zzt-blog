@@ -7,7 +7,7 @@
       </v-container>
     </v-sheet>
 
-    <v-footer padless>
+    <v-footer padless app>
       <v-col class="text-center" cols="12">
         {{ new Date().getFullYear() }} — <strong>ZZT</strong>
       </v-col>
