@@ -43,7 +43,9 @@ jobs:
         run: yarn
 
       - name: Run linter 👀
-        run: yarn lint --fix
+        run: |
+          yarn lint:js --fix
+          yarn lint:style
 
       - name: Run tests 🧪
         run: yarn test
