@@ -1,15 +1,18 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import BlogPost from '../../components/BlogPost'
 
 describe('Blog Post', () => {
   describe('Title', () => {
     it('display title defined in props', () => {
-      const wrapper = mount(BlogPost, {
+      const title = 'Some title'
+
+      const wrapper = shallowMount(BlogPost, {
         propsData: {
-          title: 'Some title',
-          description: 'lorem ipsum dolor sit',
+          title,
+          description: '',
           createdAt: new Date(),
           category: 'Sci-Fi',
+          src: 'https://www.google.com',
         },
       })
 
@@ -19,18 +22,19 @@ describe('Blog Post', () => {
 
   describe('Description', () => {
     it('display description defined in props', () => {
-      const wrapper = mount(BlogPost, {
+      const description = 'Lorem ipsum dolor sit'
+
+      const wrapper = shallowMount(BlogPost, {
         propsData: {
-          title: 'Some title',
-          description: 'lorem ipsum dolor sit',
+          title: '',
+          description,
           createdAt: new Date(),
-          category: 'Sci-Fi',
+          category: '',
+          src: 'https://www.google.com',
         },
       })
 
-      expect(wrapper.find('.text-justify').text()).toContain(
-        'lorem ipsum dolor sit'
-      )
+      expect(wrapper.find('.text-justify').text()).toContain(description)
     })
   })
 })
