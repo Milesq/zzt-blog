@@ -6,10 +6,10 @@ describe('Blog Post', () => {
     it('display title defined in props', () => {
       const wrapper = mount(BlogPost, {
         propsData: {
-          title: {
-            name: 'Some title',
-            completed: false,
-          },
+          title: 'Some title',
+          description: 'lorem ipsum dolor sit',
+          createdAt: new Date(),
+          category: 'Sci-Fi',
         },
       })
 
@@ -21,14 +21,16 @@ describe('Blog Post', () => {
     it('display description defined in props', () => {
       const wrapper = mount(BlogPost, {
         propsData: {
-          description: {
-            name: 'Some description',
-            completed: false,
-          },
+          title: 'Some title',
+          description: 'lorem ipsum dolor sit',
+          createdAt: new Date(),
+          category: 'Sci-Fi',
         },
       })
 
-      expect(wrapper.find('.text-justify').text()).toContain('Some description')
+      expect(wrapper.find('.text-justify').text()).toContain(
+        'lorem ipsum dolor sit'
+      )
     })
   })
 })
