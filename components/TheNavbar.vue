@@ -75,6 +75,11 @@ export default {
       },
     ],
   }),
+  mounted() {
+    this.group = this.links.findIndex(({ link }) =>
+      link.startsWith(this.$route.path)
+    );
+  },
   watch: {
     group(group) {
       if (group === undefined) return;
