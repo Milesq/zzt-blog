@@ -57,6 +57,9 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+import setupTheme from '@/assets/setupTheme';
+
 export default {
   data: () => ({
     drawer: false,
@@ -77,6 +80,7 @@ export default {
     ],
   }),
   mounted() {
+    setupTheme.call(this);
     this.group = this.links.findIndex(({ link }) =>
       link.startsWith(this.$route.path)
     );
@@ -92,10 +96,6 @@ export default {
       this.$router.push(link);
     },
   },
-  methods: {
-    changeTheme() {
-      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-    },
-  },
+  methods: mapMutations(['changeTheme']),
 };
 </script>
