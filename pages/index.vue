@@ -1,3 +1,3 @@
 <template>
-  <TheStaticPage name="contact" />
+  <TheStaticPage name="main" />
 </template>
