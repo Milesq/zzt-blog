@@ -37,7 +37,6 @@ import df from 'dateformat';
 export default {
   async asyncData({ params: { title: slug }, $content }) {
     const [post] = await $content('posts').where({ slug }).fetch();
-    console.log(post.image);
     return { post };
   },
   methods: {

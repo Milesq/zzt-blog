@@ -1,14 +1,3 @@
 <template>
-  <nuxt-content :document="mainContent" />
+  <TheStaticPage name="main" />
 </template>
-
-<script>
-export default {
-  async fetch() {
-    this.mainContent = await this.$content('main').fetch();
-  },
-  data: () => ({
-    mainContent: null,
-  }),
-};
-</script>

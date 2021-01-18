@@ -14,7 +14,7 @@
     <v-col cols="8">
       <div>
         <div class="display-1 font-weight-medium justify-left">
-          <p>Droga Życia i nie życia</p>
+          <p>Some title</p>
         </div>
 
         <div>
