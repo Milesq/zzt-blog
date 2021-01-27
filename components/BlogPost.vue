@@ -15,6 +15,7 @@
       <div>
         <div class="display-1 font-weight-medium justify-left">
           <p>{{ title }}</p>
+          <p>Some title</p>
         </div>
 
         <div>

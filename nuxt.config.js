@@ -13,6 +13,7 @@ export default {
   components: true,
   buildModules: ['@nuxtjs/stylelint-module', '@nuxtjs/vuetify'],
   modules: ['@nuxtjs/pwa', '@nuxt/content'],
+  plugins: ['~/plugins/vuex-persist.client.js'],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
   },
