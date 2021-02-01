@@ -6,7 +6,7 @@
           class="rounded-circle"
           width="200"
           height="200"
-          src="https://preview.colorlib.com/theme/andrea/images/image_1.jpg"
+          :src="src"
         />
       </nuxt-link>
     </v-col>
@@ -14,6 +14,7 @@
     <v-col cols="8">
       <div>
         <div class="display-1 font-weight-medium justify-left">
+          <p>{{ title }}</p>
           <p>Some title</p>
         </div>
 
@@ -21,11 +22,11 @@
           <span class="d-flex justify-space-around">
             <p class="grey--text">
               <v-icon right> mdi-av-timer </v-icon>
-              June 28, 2020
+              {{ createdAt.toString() }}
             </p>
             <p class="font-weight-bold">
               <v-icon left> mdi-folder </v-icon>
-              Sience
+              {{ category }}
             </p>
             <p class="views">
               <v-icon left> mdi-human-greeting </v-icon>
@@ -36,9 +37,7 @@
 
         <div class="grey--text text--darken-2 text-justify">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est veniam
-            laudantium eligendi, assumenda eveniet expedita nobis dolorem,
-            tempora
+            {{ description }}
           </p>
         </div>
 
