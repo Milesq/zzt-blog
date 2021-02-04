@@ -90,7 +90,7 @@ jobs:
           zip -r my-artifact dist/
 
       - name: Remove old release
-        uses: dev-drprasad/delete-tag-and-release@v0.1.2
+        uses: dev-drprasad/delete-tag-and-release@v0.1.3
         with:
           delete_release: true
           tag_name: v0.1.0
