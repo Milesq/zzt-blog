@@ -3,3 +3,5 @@
 [![CI status](https://github.com/milesq/zzt-blog/workflows/ci/badge.svg)]()
 
 Blog for our [ZZT](https://zwolnienizteorii.pl/) project
+
+[https://zzt-blog.vercel.app/](https://zzt-blog.vercel.app/)
